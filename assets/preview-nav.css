@@ -2,3 +2,24 @@
 #concept-dock{box-sizing:border-box;position:fixed;z-index:9990;bottom:19px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;padding:5px;background:#101419ed;border:1px solid #ffffff38;border-radius:100px;box-shadow:0 12px 50px #0004;backdrop-filter:blur(22px);font-family:Arial,Helvetica,sans-serif;color:white;max-width:calc(100vw - 22px)}
 #concept-dock *{box-sizing:border-box}#concept-dock .dock-home{display:flex;align-items:center;gap:7px;letter-spacing:.04em;font-size:11px;color:#e3e9f1;text-decoration:none;padding:9px 14px;border-radius:100px;white-space:nowrap}#concept-dock .dock-home:hover{background:#ffffff18}#concept-dock .dock-link{display:flex;align-items:center;justify-content:center;min-width:77px;padding:10px 13px;border-radius:100px;font-size:11px;color:#d5dde6;text-decoration:none;white-space:nowrap;font-weight:600}#concept-dock .dock-link:hover{background:#ffffff22;color:#fff}#concept-dock .dock-link.active{background:white;color:#121a22}#concept-dock .dock-link[aria-disabled="true"]{opacity:.42;cursor:not-allowed}#concept-dock .dock-sep{height:18px;width:1px;background:#ffffff35;margin:0 2px}#concept-dock .dock-logo{font-size:13px;line-height:1}#concept-dock a:focus-visible{outline:3px solid #91b5ff;outline-offset:3px}
 @media(max-width:600px){#concept-dock{bottom:11px;padding:4px;gap:1px}#concept-dock .dock-home{padding:9px;font-size:0}#concept-dock .dock-logo{font-size:16px}#concept-dock .dock-link{min-width:65px;padding:9px;font-size:10px}#concept-dock .dock-sep{margin:0 1px}}
+
+
+/* Shared responsive utility panel; isolated from individual brand concepts */
+#foundation-quick-tools{position:fixed;right:19px;bottom:90px;z-index:9989;font:12px/1.5 Arial,sans-serif;color:#e8edf5}
+#toolsToggle{border:1px solid #ffffff42;border-radius:100px;background:#131b2beF;color:#fff;padding:13px 16px;box-shadow:0 8px 38px #0004;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px}
+#toolsPanel{position:absolute;bottom:55px;right:0;width:min(345px,calc(100vw - 30px));background:#111b2cf5;color:#e8edf5;padding:20px;border:1px solid #ffffff24;border-radius:14px;box-shadow:0 25px 70px #0005;backdrop-filter:blur(25px)}
+#toolsPanel[hidden]{display:none!important}
+#toolsPanel .tools-title{display:flex;justify-content:space-between;align-items:center;letter-spacing:.14em;font-weight:800;font-size:11px;margin-bottom:16px}
+#toolsClose{background:none;border:0;font-size:21px;color:white;cursor:pointer}
+#toolsPanel label{display:block;letter-spacing:.12em;font-size:10px;color:#bac9df;margin-bottom:7px;font-weight:700}
+#toolsSearch{background:#f5f7fb!important;color:#121b2b!important;border:0!important;padding:12px!important;width:100%!important;min-height:40px!important;border-radius:7px!important;font-size:12px!important;box-sizing:border-box}
+#toolsResults{max-height:160px;overflow:auto;margin:8px 0}
+#toolsResults>button{display:block;text-align:left;width:100%;font-size:11px;border:0;background:#ffffff12;color:#fff;padding:9px;margin:4px 0;cursor:pointer;border-radius:5px}
+#toolsPanel .tools-row{display:flex;gap:7px;margin-top:11px}
+#toolsPanel .tools-row button{flex:1;background:#26354d;border:1px solid #ffffff21;border-radius:6px;color:#fff;padding:9px 4px;font-size:10px;font-weight:700;cursor:pointer}
+#toolsPanel .tools-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:17px}
+#toolsPanel .tools-links a{color:#dbe9ff;font-weight:700;font-size:11px;text-decoration:underline;text-underline-offset:4px}
+#toolsPanel>p{color:#aab9cf;margin:17px 0 0;font-size:10px}
+html.foundation-pause-motion *,html.foundation-pause-motion *:before,html.foundation-pause-motion *:after{animation-play-state:paused!important;transition-duration:.001ms!important}
+html:has(#foundation-quick-tools){font-size:calc(16px * var(--concept-font-scale,1))}
+@media(max-width:600px){#foundation-quick-tools{right:12px;bottom:72px}#toolsToggle{padding:11px 13px}#toolsPanel{bottom:49px}}
