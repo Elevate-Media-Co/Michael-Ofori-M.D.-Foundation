@@ -51,3 +51,9 @@
 
 /* Approved founder profile / image-led home section */
 .founder-feature{background:#eff4f2;padding-top:100px;padding-bottom:100px}.founder-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,8vw,145px);align-items:center}.founder-visual{position:relative;max-width:450px}.founder-visual img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;border-radius:220px 220px 18px 18px;background:#d9e5eb;display:block}.founder-visual span{position:absolute;bottom:16px;left:16px;background:#fff;padding:10px 16px;font-size:10px;letter-spacing:.12em;font-weight:800;color:#183a32}.founder-copy h2{font-size:clamp(43px,5vw,80px);line-height:1.07;letter-spacing:-.045em;margin:24px 0}.founder-copy h2 em{color:#377965}.founder-copy p{max-width:580px;font-size:15px;line-height:1.85;color:#526b64;margin:0 0 18px}@media(max-width:760px){.founder-feature{padding-top:65px;padding-bottom:65px}.founder-grid{grid-template-columns:1fr;gap:35px}.founder-visual{max-width:350px}.founder-copy h2{font-size:47px}}
+
+/* Founder photography: consistent frame in homepage and About */
+.about-founder-photo{width:100%;max-width:410px;overflow:hidden;border-radius:210px 210px 16px 16px;background:#d9e3ea;box-shadow:0 22px 62px #173a2e18}
+.about-founder-photo img{display:block;width:100%;height:490px;object-fit:cover;object-position:center 30%}
+.legacy-image-hero img{object-position:center 26%;filter:none}
+@media(max-width:740px){.about-founder-photo{max-width:340px}.about-founder-photo img{height:405px}.legacy-image-hero img{object-position:center 25%}}
