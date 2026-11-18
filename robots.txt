@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://michael-ofori-md-foundation.vercel.app/sitemap.xml
